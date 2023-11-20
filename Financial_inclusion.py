@@ -28,13 +28,13 @@ for i in categoricals.columns:
 x = df.drop('bank_account',axis = 1)
 y = df.bank_account
 
-# - Using XGBOOST to find feature importance
-import xgboost as xgb
-model = xgb.XGBClassifier()
-model.fit(x, y)
+# # - Using XGBOOST to find feature importance
+# import xgboost as xgb
+# model = xgb.XGBClassifier()
+# model.fit(x, y)
 
-# Print feature importance scores
-xgb.plot_importance(model)
+# # Print feature importance scores
+# xgb.plot_importance(model)
 
 sel_cols = ['age_of_respondent', 'education_level', 'household_size', 'job_type', 'marital_status']
 x = df[sel_cols]
