@@ -124,3 +124,7 @@ if st.button('Press To Predict'):
     st.toast('bank_account Predicted')
     st.image('pngwing.com (10).png', width = 100)
     st.success(f'Inclusion is {predicted}')
+    if predicted == 0:
+        st.success('The person does not have an account')
+    else:
+        st.success('the person has an account')
